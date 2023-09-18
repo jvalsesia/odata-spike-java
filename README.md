@@ -25,19 +25,19 @@ Open browser and try the following URLs,
 ### Service Document
 
 ```URL
-http://localhost:3000/OData/V4.0/
+http://localhost:3000/V4.0/
 ```
 
 ### Metadata Document
 
 ```
-http://localhost:3000/OData/V4.0/$metadata
+http://localhost:3000/V4.0/$metadata
 ```
 
 ### Query / EntitySet
 
 ```
-http://localhost:3000/OData/V4.0/CustomerInfos?$format=JSON
+http://localhost:3000/V4.0/CustomerInfos?$format=JSON
 ```
 
 
