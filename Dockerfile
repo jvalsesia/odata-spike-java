@@ -1,5 +1,5 @@
 
 FROM openjdk:17-alpine
 ADD target/odata-spike.jar odata-spike.jar
-EXPOSE 80
+EXPOSE 3000
 ENTRYPOINT ["java", "-jar", "odata-spike.jar"]

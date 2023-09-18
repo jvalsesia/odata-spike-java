@@ -94,3 +94,67 @@ https://code.visualstudio.com/docs/java/java-spring-apps#_create-an-app-on-azure
 
 https://learn.microsoft.com/en-us/azure/spring-apps/quickstart?tabs=Azure-portal%2CAzure-CLI%2CConsumption-workload&pivots=sc-enterprise
 
+
+
+# Yugabyte Helm
+helm repo add yugabytedb https://charts.yugabyte.com
+helm repo update
+
+helm search repo yugabytedb/yugabyte --version 2.19.0
+
+kubectl create namespace yb-survey
+
+helm install yb-survey yugabytedb/yugabyte \
+--version 2.19.0 \
+--set resource.master.requests.cpu=0.5,resource.master.requests.memory=0.5Gi,\
+resource.tserver.requests.cpu=0.5,resource.tserver.requests.memory=0.5Gi,\
+replicas.master=1,replicas.tserver=1 --namespace yb-survey
+
+Because load balancers are not available in a Minikube environment, the LoadBalancers for yb-master-ui and yb-tserver-service remain in pending state. To disable these services, you can pass the enableLoadBalancer=False flag, as follows:
+
+helm install yb-survey yugabytedb/yugabyte \
+--version 2.19.0 \
+--set resource.master.requests.cpu=0.5,resource.master.requests.memory=0.5Gi,\
+resource.tserver.requests.cpu=0.5,resource.tserver.requests.memory=0.5Gi,\
+replicas.master=1,replicas.tserver=1,enableLoadBalancer=False --namespace yb-survey
+
+NAME: yb-survey
+LAST DEPLOYED: Mon Sep 18 15:34:44 2023
+NAMESPACE: yb-survey
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+NOTES:
+1. Get YugabyteDB Pods by running this command:
+  kubectl --namespace yb-survey get pods
+
+2. Get list of YugabyteDB services that are running:
+  kubectl --namespace yb-survey get services
+
+3. Get information about the load balancer services:
+  kubectl get svc --namespace yb-survey
+
+4. Connect to one of the tablet server:
+  kubectl exec --namespace yb-survey -it yb-tserver-0 bash
+
+4.5. To run sql script
+kubectl exec --namespace yb-survey -it yb-tserver-0 /bin/bash
+
+5. Run YSQL shell from inside of a tablet server:
+  kubectl exec --namespace yb-survey -it yb-tserver-0 -- /home/yugabyte/bin/ysqlsh -h yb-tserver-0.yb-tservers.yb-survey
+
+6. Cleanup YugabyteDB Pods
+  For helm 2:
+  helm delete yb-survey --purge
+  For helm 3:
+  helm delete yb-survey -n yb-survey
+  NOTE: You need to manually delete the persistent volume
+  kubectl delete pvc --namespace yb-survey -l app=yb-master
+  kubectl delete pvc --namespace yb-survey -l app=yb-tserver
+[jcvalsesia@fedora ~]$ 
+
+
+kubectl --namespace yb-survey port-forward svc/yb-master-ui 7000:7000
+
+7. Add yb-tserver-0 to /etc/hosts as:
+127.0.0.1 yb-tserver-0

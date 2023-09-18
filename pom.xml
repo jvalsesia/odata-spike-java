@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.avaya.ept.pocs</groupId>
 	<artifactId>odata-spike</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.5</version>
 	<name>odata-spike</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
