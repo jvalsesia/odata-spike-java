@@ -157,4 +157,7 @@ kubectl exec --namespace yb-survey -it yb-tserver-0 /bin/bash
 kubectl --namespace yb-survey port-forward svc/yb-master-ui 7000:7000
 
 7. Add yb-tserver-0 to /etc/hosts as:
-127.0.0.1 yb-tserver-0
+127.0.0.1 yb-tservers
+
+
+8. kind create cluster --config kind-config.yaml

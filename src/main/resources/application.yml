@@ -32,9 +32,14 @@ management:
       enabled: true
       probes:
         enabled: true
+  health:
+    livenessState: 
+      enabled: true
+    readinessState: 
+      enabled: true
   endpoints:
     web:
       exposure:
-        include: 'liveness,readiness'
+        include: 'liveness,readiness,health,info,metrics,env,flyway'
 
 # pgadmin/Avaya123!

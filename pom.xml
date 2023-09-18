@@ -11,7 +11,7 @@
 	</parent>
 	<groupId>com.avaya.ept.pocs</groupId>
 	<artifactId>odata-spike</artifactId>
-	<version>0.0.5</version>
+	<version>0.0.7</version>
 	<name>odata-spike</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -45,10 +45,10 @@
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>com.azure.spring</groupId>
 			<artifactId>spring-cloud-azure-starter-jdbc-postgresql</artifactId>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
@@ -86,7 +86,7 @@
 		</dependency>
 
 	</dependencies>
-	<dependencyManagement>
+	<!-- <dependencyManagement>
 		<dependencies>
 			<dependency>
 				<groupId>com.azure.spring</groupId>
@@ -96,7 +96,7 @@
 				<scope>import</scope>
 			</dependency>
 		</dependencies>
-	</dependencyManagement>
+	</dependencyManagement> -->
 	<build>
 		<plugins>
 			<plugin>
