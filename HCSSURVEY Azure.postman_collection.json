@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "7c80f7e0-a2b1-402c-9c11-7347c5a558a6",
+		"name": "HCSSURVEY Azure",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "730092"
+	},
+	"item": [
+		{
+			"name": "Create Survey Azure",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"survey_root\": {\n    \"surveyData\": {\n      \"engagementId\": \"98578d6a-3e3c-4132-afe1-084fc82267bd\",\n      \"name\": \"survey name\",\n      \"language\": \"en-us\",\n      \"channelId\": \"VOICE\",\n      \"startDate\": \"2018-12-10T13:49:51.141Z\",\n      \"endDate\": \"2018-12-10T13:52:13.109Z\",\n      \"reason\": \"SUCCESS\",\n      \"questions\": [\n        {\n          \"questionId\": \"1\",\n          \"order\": 1,\n          \"questionName\": \"From 0 to 4 what is the score you would give to your experience?\",\n          \"questionOption\": [\n            {\n              \"questionOptionId\": \"1\",\n              \"questionId\": \"1\",\n              \"value\": 0,\n              \"result\": \"Very Poor\"\n            },\n            {\n              \"questionOptionId\": \"2\",\n              \"questionId\": \"1\",\n              \"value\": 1,\n              \"result\": \"Poor\"\n            },\n            {\n              \"questionOptionId\": \"3\",\n              \"questionId\": \"1\",\n              \"value\": 2,\n              \"result\": \"Good\"\n            }\n          ]\n        }\n      ]\n    },\n    \"answers\": [\n      {\n        \"answerId\": \"1\",\n        \"questionId\": \"1\",\n        \"questionOptionId\": \"3\",\n        \"answerType\": \"Range\",\n        \"result\": \"SUCCESS\"\n      }\n    ],\n    \"surveyContext\": {\n      \"tenantId\": \"1\",\n      \"lastAgentId\": \"l084ifws-3954-9025-1395-9d81km49azt0\",\n      \"callId\": \"387933364\",\n      \"dnis\": \"24384\",\n      \"customerInfo\": {\n        \"accountId\": \"12345\",\n        \"email\": \"customer@company.com\",\n        \"phoneNumber\": \"2344-2453-564\"\n      },\n      \"orchestrationContext\": {\n        \"queue\": \"string\",\n        \"attributeList\": [\n          \"string\"\n        ],\n        \"userId\": \"0\",\n        \"channelProviderId\": \"l09s17cv-3954-9025-1395-9d81km49azt0\",\n        \"channelProviderAddress\": \"z17u7d3f-3954-9025-1395-9d81km49azt0\"\n      }\n    }\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://brixhcssurvey.ayc5gygxevc7acf9.brazilsouth.azurecontainer.io/api/v1/survey",
+					"protocol": "http",
+					"host": [
+						"brixhcssurvey",
+						"ayc5gygxevc7acf9",
+						"brazilsouth",
+						"azurecontainer",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"survey"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Page Surveys Azure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://brixhcssurvey.ayc5gygxevc7acf9.brazilsouth.azurecontainer.io/api/v1/survey/page/size/100/number/1",
+					"protocol": "http",
+					"host": [
+						"brixhcssurvey",
+						"ayc5gygxevc7acf9",
+						"brazilsouth",
+						"azurecontainer",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"survey",
+						"page",
+						"size",
+						"100",
+						"number",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Survey Health Checker Azure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://brixhcssurvey.ayc5gygxevc7acf9.brazilsouth.azurecontainer.io/api/v1/healthchecker",
+					"protocol": "http",
+					"host": [
+						"brixhcssurvey",
+						"ayc5gygxevc7acf9",
+						"brazilsouth",
+						"azurecontainer",
+						"io"
+					],
+					"path": [
+						"api",
+						"v1",
+						"healthchecker"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

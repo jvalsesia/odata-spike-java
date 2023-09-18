@@ -29,7 +29,7 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping(ODataController.URI)
 public class ODataController {
 
-	protected static final String URI = "/OData/V4.0";
+	protected static final String URI = "/V4.0";
 
 	@Autowired
 	CsdlEdmProvider edmProvider;

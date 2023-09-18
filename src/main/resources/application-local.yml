@@ -1,16 +1,12 @@
-logging:
-    level:
-        org.springframework.jdbc.core: DEBUG
-
+server:
+    port: 3000
 
 spring:
     datasource:
         driver-class-name: org.postgresql.Driver
-        url: jdbc:postgresql://poc01-postgresql.postgres.database.azure.com:5432/surveydb?sslmode=require
-        username: pgadmin
-        password: Avaya123!
-        # azure:
-        #     passwordless-enabled: true 
+        url: jdbc:postgresql://localhost:5433/yugabyte
+        username: yugabyte
+        password: yugabyte
         dbcp2:
             max-wait-millis: 30000
             validation-query: select 1
@@ -23,6 +19,6 @@ spring:
                 dialect: org.hibernate.dialect.PostgreSQLDialect
         hibernate:
             ddl-auto: none
-    sql:
-        init:
-            mode: always
+
+
+# pgadmin/Avaya123!

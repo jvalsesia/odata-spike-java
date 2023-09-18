@@ -1,0 +1,1242 @@
+{
+	"info": {
+		"_postman_id": "19b392a9-7acf-425c-adb5-5605c64ca1de",
+		"name": "Odata Azure",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "730092"
+	},
+	"item": [
+		{
+			"name": "Rest get all CustomerInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/customerinfo/list",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"customerinfo",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rest get all Survey",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/surveycontext/list",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"surveycontext",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rest get all Answer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/answer/list",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"answer",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rest get all Question",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/question/list",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"question",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rest get all QuestionOption",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/questionoption/list",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"questionoption",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rest get all SurveyContext",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/surveycontext/list",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"surveycontext",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rest get all Agent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/agent/list",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"agent",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rest get all OrchestrationContext",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/orchestrationcontext/list",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"orchestrationcontext",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Rest get all AttributeList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/attributelist/list",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"attributelist",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata metadata",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/$metadata",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"$metadata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata metadata Azure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/$metadata",
+					"protocol": "https",
+					"host": [
+						"poc01-spring-app-poc01-app",
+						"azuremicroservices",
+						"io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"$metadata"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent format JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents?$format=JSON",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "JSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent format JSON Azure",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents?$format=JSON",
+					"protocol": "https",
+					"host": [
+						"poc01-spring-app-poc01-app",
+						"azuremicroservices",
+						"io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "JSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent format JSON Query $select",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents?$select=LastName",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents"
+					],
+					"query": [
+						{
+							"key": "$select",
+							"value": "LastName"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent format JSON Query $orderby",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents?$orderby=FirstName",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents"
+					],
+					"query": [
+						{
+							"key": "$orderby",
+							"value": "FirstName"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent format JSON Query $fiter",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents?$filter=contains(LastName,'Alvarado') ",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents"
+					],
+					"query": [
+						{
+							"key": "$filter",
+							"value": "contains(LastName,'Alvarado') "
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent format JSON Query $select specific",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents(5a9ca823-e31d-4abf-be68-f5d94ad819cf)?$select=LastName",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents(5a9ca823-e31d-4abf-be68-f5d94ad819cf)"
+					],
+					"query": [
+						{
+							"key": "$select",
+							"value": "LastName"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent format JSON Filter $count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents?$count=true",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents"
+					],
+					"query": [
+						{
+							"key": "$count",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent format JSON Filter $top",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents?$top=2",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents"
+					],
+					"query": [
+						{
+							"key": "$top",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent format JSON Filter $skip",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents?$skip=2",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents"
+					],
+					"query": [
+						{
+							"key": "$skip",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent format JSON Filter combine $skip $top $count",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents?$skip=1&$top=1&$count=true",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents"
+					],
+					"query": [
+						{
+							"key": "$skip",
+							"value": "1"
+						},
+						{
+							"key": "$top",
+							"value": "1"
+						},
+						{
+							"key": "$count",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent navigation to SurveyContexts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents(5a9ca823-e31d-4abf-be68-f5d94ad819cf)/SurveyContexts",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents(5a9ca823-e31d-4abf-be68-f5d94ad819cf)",
+						"SurveyContexts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent entity property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents(af7638ea-31b2-49df-88a6-05a092f5602d)",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents(af7638ea-31b2-49df-88a6-05a092f5602d)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Agent single property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Agents(af7638ea-31b2-49df-88a6-05a092f5602d)/DisplayName",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Agents(af7638ea-31b2-49df-88a6-05a092f5602d)",
+						"DisplayName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata AttributeList format JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/AttributeLists?$format=JSON",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"AttributeLists"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "JSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata AttributeList entity property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/AttributeLists(163576e7-fa17-4e71-ae9b-9980c61134fc)",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"AttributeLists(163576e7-fa17-4e71-ae9b-9980c61134fc)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata AttributeList navigation to OrchestrationContext",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/AttributeLists(f34f826b-8e77-40ab-8c03-62d598c8fc79)/OrchestrationContext",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"AttributeLists(f34f826b-8e77-40ab-8c03-62d598c8fc79)",
+						"OrchestrationContext"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata AttributeList Query $expand to OrchestrationContext",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/AttributeLists(f34f826b-8e77-40ab-8c03-62d598c8fc79)?expand=OrchestrationContext",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"AttributeLists(f34f826b-8e77-40ab-8c03-62d598c8fc79)"
+					],
+					"query": [
+						{
+							"key": "expand",
+							"value": "OrchestrationContext"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata AttributeList single property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/AttributeLists(163576e7-fa17-4e71-ae9b-9980c61134fc)/AttributeValue",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"AttributeLists(163576e7-fa17-4e71-ae9b-9980c61134fc)",
+						"AttributeValue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata OrchestrationContext format JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/OrchestrationContexts?$format=JSON",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"OrchestrationContexts"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "JSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata OrchestrationContext navigation to AttributeLists",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/OrchestrationContexts(c84a2a8c-4bb5-480a-9bb1-8d564070efd9)/AttributeLists",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"OrchestrationContexts(c84a2a8c-4bb5-480a-9bb1-8d564070efd9)",
+						"AttributeLists"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata OrchestrationContext navigation to SurveyContexts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/OrchestrationContexts(c84a2a8c-4bb5-480a-9bb1-8d564070efd9)/SurveyContexts",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"OrchestrationContexts(c84a2a8c-4bb5-480a-9bb1-8d564070efd9)",
+						"SurveyContexts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata OrchestrationContext entity property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/OrchestrationContexts(c84a2a8c-4bb5-480a-9bb1-8d564070efd9)",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"OrchestrationContexts(c84a2a8c-4bb5-480a-9bb1-8d564070efd9)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata OrchestrationContext single property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/OrchestrationContexts(af73f7de-eb5c-4c0c-a0f3-628bbae58cc6)/UserId",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"OrchestrationContexts(af73f7de-eb5c-4c0c-a0f3-628bbae58cc6)",
+						"UserId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata CustomerInfo format JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/CustomerInfos?$format=JSON",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"CustomerInfos"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "JSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata CustomerInfo entity property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/CustomerInfos(71f2b72b-904f-447e-b25c-49cc206eacca)",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"CustomerInfos(71f2b72b-904f-447e-b25c-49cc206eacca)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata CustomerInfo single property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/CustomerInfos(29efc829-589a-4a04-a09c-20eaafaaa935)/EmailAddress",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"CustomerInfos(29efc829-589a-4a04-a09c-20eaafaaa935)",
+						"EmailAddress"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Survey format JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Surveys?$format=JSON",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Surveys"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "JSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Survey entity property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Surveys(012826d4-ede2-4f5d-b911-fb20869859d6)",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Surveys(012826d4-ede2-4f5d-b911-fb20869859d6)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Survey single property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Surveys(012826d4-ede2-4f5d-b911-fb20869859d6)/EngagementId",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Surveys(012826d4-ede2-4f5d-b911-fb20869859d6)",
+						"EngagementId"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Answer format JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Answers?$format=JSON",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Answers"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "JSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Answer single property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Answers(baa06a56-e4b2-41c7-b8c5-a0b32088a27c)/Result",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Answers(baa06a56-e4b2-41c7-b8c5-a0b32088a27c)",
+						"Result"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Answer entity property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Answers(baa06a56-e4b2-41c7-b8c5-a0b32088a27c)",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Answers(baa06a56-e4b2-41c7-b8c5-a0b32088a27c)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Question format JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Questions?$format=JSON",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Questions"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "JSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Question entity property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Questions(b99089ee-e725-4668-b06f-d94cdfe5e3a5)",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Questions(b99089ee-e725-4668-b06f-d94cdfe5e3a5)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata Question single property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/Questions(b99089ee-e725-4668-b06f-d94cdfe5e3a5)/QuestionName",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"Questions(b99089ee-e725-4668-b06f-d94cdfe5e3a5)",
+						"QuestionName"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata QuestionOption format JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/QuestionOptions?$format=JSON",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"QuestionOptions"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "JSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata QuestionOption entity property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/QuestionOptions(c46acb35-fe8a-4ab9-8e3c-f175e7e24c7f)",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"QuestionOptions(c46acb35-fe8a-4ab9-8e3c-f175e7e24c7f)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata QuestionOption single property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/QuestionOptions(c46acb35-fe8a-4ab9-8e3c-f175e7e24c7f)/Result",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"QuestionOptions(c46acb35-fe8a-4ab9-8e3c-f175e7e24c7f)",
+						"Result"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata SurveyContext format JSON",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/SurveyContexts?$format=JSON",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"SurveyContexts"
+					],
+					"query": [
+						{
+							"key": "$format",
+							"value": "JSON"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata SurveyContext navigation to OrchestrationContext",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/SurveyContexts(830e7895-2cf4-4f78-9e91-42d3b1c78b3f)/OrchestrationContext",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"SurveyContexts(830e7895-2cf4-4f78-9e91-42d3b1c78b3f)",
+						"OrchestrationContext"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata SurveyContext navigation to Agent",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/SurveyContexts(830e7895-2cf4-4f78-9e91-42d3b1c78b3f)/Agent",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"SurveyContexts(830e7895-2cf4-4f78-9e91-42d3b1c78b3f)",
+						"Agent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata SurveyContext entity property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/SurveyContexts(60132709-f27d-41b4-be43-1b869d913c06)",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"SurveyContexts(60132709-f27d-41b4-be43-1b869d913c06)"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Odata SurveyContext single property",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://poc01-spring-app-poc01-app.azuremicroservices.io/OData/V4.0/SurveyContexts(60132709-f27d-41b4-be43-1b869d913c06)/LastAgentId",
+					"protocol": "http",
+					"host": [
+						"poc01-spring-app-poc01-app.azuremicroservices.io"
+					],
+					"path": [
+						"OData",
+						"V4.0",
+						"SurveyContexts(60132709-f27d-41b4-be43-1b869d913c06)",
+						"LastAgentId"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

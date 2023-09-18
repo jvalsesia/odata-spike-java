@@ -86,3 +86,11 @@ docker exec -it yb-tserver-n1 /home/yugabyte/bin/ysqlsh -h yb-tserver-n1
 ```bash
 SELECT * FROM public.agent;
 ```
+
+
+# Azure
+
+https://code.visualstudio.com/docs/java/java-spring-apps#_create-an-app-on-azure-spring-apps
+
+https://learn.microsoft.com/en-us/azure/spring-apps/quickstart?tabs=Azure-portal%2CAzure-CLI%2CConsumption-workload&pivots=sc-enterprise
+
