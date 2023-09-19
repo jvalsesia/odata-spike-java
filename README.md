@@ -97,12 +97,17 @@ https://learn.microsoft.com/en-us/azure/spring-apps/quickstart?tabs=Azure-portal
 
 
 # Yugabyte Helm
+
+0. kind create cluster --config kind-config.yaml
+
+
 helm repo add yugabytedb https://charts.yugabyte.com
 helm repo update
 
 helm search repo yugabytedb/yugabyte --version 2.19.0
 
 kubectl create namespace yb-survey
+kubectl config set-context --current --namespace=yb-survey
 
 helm install yb-survey yugabytedb/yugabyte \
 --version 2.19.0 \
@@ -154,10 +159,14 @@ kubectl exec --namespace yb-survey -it yb-tserver-0 /bin/bash
 [jcvalsesia@fedora ~]$ 
 
 
+7. 
+kubectl port-forward services/yb-tservers 9000:9000 12000:12000 11000:11000 13000:13000 9100:9100 6379:6379 9042:9042 5433:5433 -n yb-survey
+
+8. 
 kubectl --namespace yb-survey port-forward svc/yb-master-ui 7000:7000
 
-7. Add yb-tserver-0 to /etc/hosts as:
+9. Add yb-tserver-0 to /etc/hosts as:
 127.0.0.1 yb-tservers
 
 
-8. kind create cluster --config kind-config.yaml
+
